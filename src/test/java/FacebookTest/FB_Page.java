@@ -21,16 +21,6 @@ public class FB_Page {
     WebDriver driver;
     WebDriverWait wait;
 
-  /* public FB_Page clickRegisterButton()throws InterruptedException {
-
-            driver.findElement(FBObjectRepo.btnRegister).click();
-
-       return this;
-   }
-
-   */
-
-
     public void openChromeBrowser() {
         String path = System.getProperty("user.dir");
         System.out.println("Proje path : " + path);
@@ -72,8 +62,6 @@ public class FB_Page {
         Random randomGenerator = new Random();
         int randomInt = randomGenerator.nextInt(1000);
         driver.findElement(FBObjectRepo.txtEmail).sendKeys("username"+ randomInt +"@gmail.com");
-
-
 
     }
 
