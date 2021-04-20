@@ -15,7 +15,6 @@ import java.util.concurrent.TimeUnit;
 
 import static java.lang.String.valueOf;
 
-
 public class FB_Page {
 
     WebDriver driver;
@@ -131,10 +130,9 @@ public class FB_Page {
 
         public void Captcha() {
 
+         driver.findElement(FBObjectRepo.captcha).sendKeys("89012");
 
-           driver.findElement(FBObjectRepo.captcha).sendKeys("89012");
-
-            System.out.println("User Entered Captcha");
+         System.out.println("User Entered Captcha");
         }
 
         public void Register() {
